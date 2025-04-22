@@ -1,0 +1,144 @@
+/* Estilos específicos para agregar-persona.html */
+
+h1 {
+    color: #FE8634;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 80px; /* Espacio para la navbar fija */
+}
+
+/* Estilo del formulario */
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 2px solid #00aaff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Mapa */
+#map {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #00aaff;
+    margin-top: 10px;
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #00aaff;
+    border-radius: 5px;
+    min-width: 200px;
+    max-width: 70%;
+    text-align: center;
+}
+
+/* Botones */
+.btn-accion,
+#locationButton,
+#searchButton {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-accion:hover,
+#locationButton:hover,
+#searchButton:hover {
+    background-color: #e07000;
+    transform: scale(1.05);
+}
+
+.btn-accion:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Notificaciones flotantes */
+.notification {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    z-index: 9999;
+}
+
+.notification.error {
+    background-color: #dc3545;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .btn-accion,
+    #locationButton,
+    #searchButton {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    #searchInput {
+        font-size: 14px;
+    }
+}

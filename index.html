@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SolidariMap</title>
+  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="stylesheet" href="public/css/index.css">
+  <!-- Reemplazado: Font Awesome CDN libre (sin CORS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Barra de navegación fija -->
+  <header>
+    <nav>
+      <div class="nav-container">
+        <button id="toggleMenu" class="menu-btn"><i class="fas fa-bars"></i></button>
+        <ul id="menuNav" class="menu">
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="pages/quiero-ayudar.html">Quiero Ayudar</a></li>
+          <li><a href="pages/agregar-persona.html">Agregar Persona</a></li>
+          <li><a href="pages/comunidad.html" id="link-comunidades">Mis Comunidades</a></li>
+          <li><a href="pages/iniciar-sesion.html" id="link-login"><span id="login-text">Iniciar Sesión</span></a></li>
+          <li><a href="pages/mi-cuenta.html">Mi Cuenta</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>  
+
+  <main class="container">
+    <h1>Bienvenido a SolidariMap</h1>
+    <img src="public/img/logo.png" alt="Logo de SolidariMap" style="max-width: 400px; margin: 20px auto; display: block;">
+    <p class="intro-text">Conectamos a personas en situación de calle con quienes quieren ayudar.</p>
+    <div class="button-row">
+      <button class="btn-naranja" onclick="location.href='pages/quiero-ayudar.html'">Quiero Ayudar</button>
+      <button class="btn-naranja" onclick="location.href='pages/agregar-persona.html'">Agregar Persona</button>
+    </div>
+  </main>
+
+  <script src="public/js/script.js"></script>
+</body>
+</html>

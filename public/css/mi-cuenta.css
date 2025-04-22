@@ -1,0 +1,165 @@
+/* Estilos específicos para mi-cuenta.html */
+
+.mi-cuenta-container {
+    max-width: 500px;
+    margin: 100px auto 40px; /* margen top para navbar */
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #00aaff;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Sección del perfil */
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.perfil-label {
+    cursor: pointer;
+}
+
+.perfil-imagen {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00aaff;
+    transition: transform 0.2s ease;
+}
+
+.perfil-imagen:hover {
+    transform: scale(1.03);
+}
+
+/* Datos del usuario */
+.datos {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Botones de acción */
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* Botón naranja reutilizable */
+.btn-naranja {
+    display: inline-block;
+    background-color: #ff8c00;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-naranja:hover {
+    background-color: #e07b00;
+    transform: scale(1.05);
+}
+
+.btn-naranja:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Mensaje cuando no hay sesión */
+.mensaje-error {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 120px;
+    padding: 0 20px;
+}
+
+.mensaje-error p {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.mensaje-error a.btn-naranja {
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+    .mi-cuenta-container {
+        padding: 20px;
+    }
+
+    .perfil-imagen {
+        width: 180px;
+        height: 180px;
+    }
+
+    .btn-naranja {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .mensaje-error {
+        font-size: 16px;
+    }
+
+    .mensaje-error a.btn-naranja {
+        font-size: 16px;
+    }
+}
+.logo-login {
+    width: 100px;
+    margin-bottom: 20px;
+}
+/* ... tu CSS actual ... */
+
+.mis-comunidades {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+  }
+  
+  .lista-comunidades {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .comunidad-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+  }
+  
+  .comunidad-card:hover {
+    transform: scale(1.01);
+  }
+  
+  .comunidad-card h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+  }
+  
+  .comunidad-card p {
+    margin: 5px 0;
+  }
+  
+  .comunidad-card .btn-naranja {
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,109 @@
+/* Estilos específicos para registro.html */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del formulario */
+.main-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 100px auto 40px; /* margen superior por navbar */
+    padding: 25px;
+    border: 2px solid #00aaff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+/* Título del formulario */
+h1 {
+    font-size: 30px;
+    color: rgb(254, 134, 52);
+    margin-bottom: 25px;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #00aaff;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Botón naranja reutilizable */
+.btn-naranja {
+    background-color: #ff8c00;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px 5px;
+    display: inline-block;
+}
+
+.btn-naranja:hover {
+    background-color: #e07b00;
+    transform: scale(1.05);
+}
+
+.btn-naranja:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Captcha o código */
+#codigoSection {
+    margin-top: 20px;
+}
+
+/* reCAPTCHA si se implementa */
+#recaptcha {
+    margin: 20px 0;
+}
+
+/* Enlaces */
+p a {
+    color: rgb(254, 134, 52);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+    .main-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .btn-naranja {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        font-size: 14px;
+    }
+}

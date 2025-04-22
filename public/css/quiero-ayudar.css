@@ -1,0 +1,152 @@
+/* Estilos específicos para quiero-ayudar.html */
+
+.container {
+    max-width: 700px;
+    margin: 80px auto 0 auto; /* Espacio por navbar */
+    padding: 25px;
+}
+
+/* Título principal */
+h1 {
+    color: #FE8634;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Texto introductorio */
+.intro-text {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0 30px 0;
+}
+
+/* Buscador de dirección */
+.search-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#searchInput {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #00aaff;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#searchButton {
+    padding: 12px 20px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#searchButton:hover {
+    background-color: #e07b00;
+    transform: scale(1.05);
+}
+
+/* Contenedor del mapa y botón flotante */
+.map-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#btnAgregarPersona {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 1000;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#btnAgregarPersona:hover {
+    background-color: #e07b00;
+    transform: scale(1.05);
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid #00aaff;
+}
+
+/* Botones de acción al final */
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-naranja {
+    flex: 1;
+    padding: 14px;
+    font-size: 16px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-naranja:hover {
+    background-color: #e07b00;
+    transform: scale(1.05);
+}
+
+.btn-naranja:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .search-container,
+    .button-row {
+        flex-direction: column;
+    }
+
+    #btnAgregarPersona {
+        top: 6px;
+        right: 6px;
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    #searchInput {
+        font-size: 14px;
+    }
+
+    #searchButton {
+        font-size: 14px;
+    }
+
+    .btn-naranja {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

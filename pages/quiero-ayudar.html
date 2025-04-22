@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¿Cómo puedo ayudar? - SolidariMap</title>
+  <link rel="stylesheet" href="../public/css/styles.css" />
+  <link rel="stylesheet" href="../public/css/quiero-ayudar.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <button id="toggleMenu" class="menu-btn"><i class="fas fa-bars"></i></button>
+        <ul id="menuNav" class="menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="quiero-ayudar.html">Quiero Ayudar</a></li>
+          <li><a href="agregar-persona.html">Agregar Persona</a></li>
+          <li><a href="comunidad.html" id="link-comunidades">Mis Comunidades</a></li>
+          <li>
+            <a href="iniciar-sesion.html" id="link-login">
+              <span id="login-text">Iniciar Sesión</span>
+            </a>
+          </li>
+          <li><a href="mi-cuenta.html">Mi Cuenta</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>    
+
+  <main class="container">
+    <h1>¿Cómo puedo ayudar?</h1>
+    <p>SolidariMap conecta a personas en situación de calle con quienes quieren ayudar.</p>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar dirección" />
+      <button id="searchButton" class="btn-naranja">Buscar</button>
+    </div>
+
+    <div class="map-container">
+      <button id="btnAgregarPersona" class="btn-naranja" onclick="window.location.href='agregar-persona.html'">Agregar Persona</button>
+      <div id="map" style="height: 500px; margin-top: 10px;"></div>
+    </div>
+
+    <div class="button-row">
+      <button id="locationButton" class="btn-naranja">Mi Ubicación</button>
+      <button id="unirseBtn" class="btn-naranja" disabled>Unirse a la Comunidad</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SolidariMap</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="../public/js/quiero-ayudar.js"></script>
+  <script src="../public/js/script.js"></script>
+</body>
+</html>

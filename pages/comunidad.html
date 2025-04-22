@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comunidad - SolidariMap</title>
+  <link rel="stylesheet" href="../public/css/styles.css" />
+  <link rel="stylesheet" href="../public/css/comunidad.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <button id="toggleMenu" class="menu-btn"><i class="fas fa-bars"></i></button>
+        <ul id="menuNav" class="menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="quiero-ayudar.html">Quiero Ayudar</a></li>
+          <li><a href="agregar-persona.html">Agregar Persona</a></li>
+          <li><a href="comunidad.html" id="link-comunidades">Mis Comunidades</a></li>
+          <li><a href="iniciar-sesion.html" id="link-login"><span id="login-text">Iniciar Sesión</span></a></li>
+          <li><a href="mi-cuenta.html">Mi Cuenta</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 id="titulo">Comunidad</h1>
+    <p class="descripcion">Conectá con personas que necesitan ayuda.</p>
+
+    <!-- Comunidad específica -->
+    <div id="info-comunidad" class="comunidad-box" style="display: none;">
+      <p>Cargando datos de la persona...</p>
+    </div>
+
+    <div class="botones-comunidad" style="display: none;">
+      <button id="comunidad-action" class="btn-naranja">Acción</button>
+      <button class="btn-naranja" onclick="window.history.back()">Volver</button>
+    </div>
+
+    <section class="foro" style="display: none;">
+      <h2>Foro de la Comunidad</h2>
+      <div id="mensajes-comunidad">
+        <p>Cargando mensajes...</p>
+      </div>
+      <form id="form-mensaje">
+        <textarea id="mensaje" placeholder="Escribí un mensaje..." required></textarea>
+        <button type="submit" class="btn-naranja">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Lista de comunidades del usuario -->
+    <section id="seccion-mis-comunidades" class="mis-comunidades">
+      <h2>Mis Comunidades</h2>
+      <div id="lista-comunidades" class="lista-comunidades">
+        <p>Cargando comunidades...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SolidariMap</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../public/js/script.js" defer></script>
+  <script src="../public/js/comunidad.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Cuenta - SolidariMap</title>
+  <link rel="stylesheet" href="../public/css/styles.css" />
+  <link rel="stylesheet" href="../public/css/mi-cuenta.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <button id="toggleMenu" class="menu-btn"><i class="fas fa-bars"></i></button>
+        <ul id="menuNav" class="menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="quiero-ayudar.html">Quiero Ayudar</a></li>
+          <li><a href="agregar-persona.html">Agregar Persona</a></li>
+          <li><a href="comunidad.html" id="link-comunidades">Mis Comunidades</a></li>
+          <li>
+            <a href="iniciar-sesion.html" id="link-login">
+              <span id="login-text">Iniciar Sesión</span>
+            </a>
+          </li>
+          <li><a href="mi-cuenta.html" class="active">Mi Cuenta</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>    
+
+  <main>
+    <div class="mi-cuenta-container">
+      <div class="perfil">
+        <label for="subir-foto" class="perfil-label">
+          <img src="../public/img/perfil-defecto.png" alt="Foto de perfil" id="foto-perfil" class="perfil-imagen" />
+        </label>
+        <input type="file" id="subir-foto" accept="image/*" style="display: none;" />
+        <div class="datos">
+          <p id="nombre-usuario">Cargando...</p>
+          <p id="telefono-usuario"></p>
+        </div>
+      </div>
+
+      <div class="botones">
+        <button id="editarPerfilBtn" class="btn-naranja">Editar Perfil</button>
+        <button class="btn-naranja" onclick="window.location.href='comunidad.html'">Mis Comunidades</button>
+        <button class="btn-naranja" onclick="cerrarSesion()">Cerrar sesión</button>
+      </div>
+
+      <!-- Formulario de edición de perfil -->
+      <form id="form-editar" style="display: none; margin-top: 20px;">
+        <input type="text" id="nuevo-nombre" placeholder="Nuevo nombre" />
+        <input type="text" id="nuevo-telefono" placeholder="Nuevo teléfono" />
+        <button type="submit" class="btn-naranja">Guardar Cambios</button>
+      </form>
+    </div>
+
+    <section id="seccion-comunidades" class="mis-comunidades">
+      <h2>Mis Comunidades</h2>
+      <div id="lista-comunidades" class="lista-comunidades">
+        <p>Cargando comunidades...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SolidariMap</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
+  <script src="../public/js/mi-cuenta.js"></script>
+  <script src="../public/js/script.js"></script>
+</body>
+</html>
